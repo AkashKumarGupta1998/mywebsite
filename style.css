@@ -1,41 +1,37 @@
-/* General Styles */
+/* --- General Page Styling --- */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    background: linear-gradient(135deg, #1E2A78, #9C27B0); /* Modern Gradient */
     color: white;
-    text-align: center;
 }
 
-/* Header */
+/* --- Header Styling --- */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1e3c72;
-    padding: 20px;
-    position: relative;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-h1 {
-    font-size: 24px;
-    margin: 0;
-    color: #f4f4f4;
-}
-
-/* Profile Picture */
+/* --- Profile Picture Styling --- */
 .profile-pic {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     border: 3px solid white;
-    position: absolute;
-    top: 10px;
-    right: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Navigation */
+/* Hover effect */
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+/* --- Navigation Bar Styling --- */
 nav ul {
     list-style: none;
     padding: 0;
@@ -43,65 +39,55 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-}
-
-/* Sections */
-section {
-    margin: 50px;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
-}
-
-h2 {
-    font-size: 28px;
-    color: #ffcc00;
-}
-
-/* Projects */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
     font-size: 18px;
-    margin: 10px 0;
-}
-
-/* Contact Form */
-input, textarea, button {
-    width: 80%;
-    padding: 10px;
-    margin: 10px;
+    padding: 8px 15px;
     border-radius: 5px;
-    border: none;
-    font-size: 16px;
+    transition: 0.3s;
 }
 
-button {
-    background-color: #ffcc00;
-    color: #333;
-    cursor: pointer;
-    font-weight: bold;
+/* Hover Effect on Navbar */
+nav ul li a:hover {
+    background: #FFC107;
+    color: black;
 }
 
-button:hover {
-    background-color: #ff9900;
+/* --- Hero Section --- */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
 }
 
-/* Footer */
-footer {
-    background-color: #1e3c72;
-    padding: 10px;
-    margin-top: 30px;
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: white;
+    background: #FF5733;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #FFC107;
+    color: black;
 }
